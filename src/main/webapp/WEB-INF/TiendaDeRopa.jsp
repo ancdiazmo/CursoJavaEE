@@ -5,8 +5,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<script type="text/javascript" src="js/TiendaDeRopa.js"></script>
 </head>
 <body>
-	<h1>Hola soy un JSP, llamado desde un servlet</h1>
+	<h1>Bienvenido a la tienda de ropa mas genial de la vida</h1>
+	<button id="" onclick="redireccionar('TiendaDeRopa')">Boton</button>
 </body>
 </html>

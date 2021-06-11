@@ -3,13 +3,14 @@ package com.tienda.ropa.service;
 import javax.inject.Inject;
 
 import com.tienda.ropa.dao.RopaDao;
+import com.tienda.ropa.items.Camiseta;
 
 public class RopaService {
 	
 	@Inject
-	private RopaDao rojaDao;
+	private RopaDao ropaDao;
 	
-	public void mostrarCamiseta () {
-		rojaDao.mostrarCamiseta();
+	public Camiseta mostrarCamiseta () {
+		return ropaDao.mostrarCamiseta();
 	}
 }
