@@ -5,13 +5,13 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
    <servlet>
-  	<servlet-name>Servlet1</servlet-name>
-  	<display-name>Servlet1</display-name>
+  	<servlet-name>TiendaDeRopa</servlet-name>
+  	<display-name>TiendaDeRopa</display-name>
   	<description></description>
-  	<servlet-class>com.paquete3.Servlet1</servlet-class>
+  	<servlet-class>com.tienda.ropa.vista.TiendaDeRopa</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>Servlet1</servlet-name>
-  	<url-pattern>/servlet1</url-pattern>
+  	<servlet-name>TiendaDeRopa</servlet-name>
+  	<url-pattern>/TiendaDeRopa</url-pattern>
   </servlet-mapping>
 </web-app>
