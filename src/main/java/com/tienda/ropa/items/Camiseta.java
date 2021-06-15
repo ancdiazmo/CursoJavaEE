@@ -1,6 +1,6 @@
 package com.tienda.ropa.items;
 
-public class Camiseta {
+public class Camiseta extends Item {
 	
 	private String color;
 

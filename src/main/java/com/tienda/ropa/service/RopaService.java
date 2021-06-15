@@ -1,16 +1,19 @@
 package com.tienda.ropa.service;
 
+import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 
-import com.tienda.ropa.dao.RopaDao;
-import com.tienda.ropa.items.Camiseta;
+import com.tienda.ropa.dao.IDao;
+import com.tienda.ropa.items.Item;
+import com.tienda.utiles.TiendaAbs;
 
-public class RopaService {
+public class RopaService extends TiendaAbs {
 	
-	@Inject
-	private RopaDao ropaDao;
+	@Inject @Default
+	private IDao ropaDao;
 	
-	public Camiseta mostrarCamiseta () {
-		return ropaDao.mostrarCamiseta();
+	public Item mostrarItem () {
+		System.out.println(SI);
+		return ropaDao.mostrarItem();
 	}
 }

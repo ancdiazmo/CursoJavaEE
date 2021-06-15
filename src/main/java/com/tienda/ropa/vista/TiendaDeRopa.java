@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tienda.ropa.items.Camiseta;
+import com.tienda.ropa.items.Item;
 import com.tienda.ropa.service.RopaService;
 
 public class TiendaDeRopa extends HttpServlet {
@@ -23,7 +23,7 @@ public class TiendaDeRopa extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Camiseta camiseta1 = ropaService.mostrarCamiseta();
+		Item camiseta1 = ropaService.mostrarItem();
 		System.out.println(camiseta1.toString());
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/TiendaDeRopa.jsp");
 		dispatcher.forward(request, response);
